@@ -12,7 +12,7 @@ int main() {
     scanf("%d", &v[pos]);
 
   // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  menor_maior(v, n, 0, 0);
+  menor_maior(v, n, &v[0], &v[0]);
 
   // SAIDA - IMPRIMINDO O RESULTADO
   //printf("SOMA = %d\n", s);

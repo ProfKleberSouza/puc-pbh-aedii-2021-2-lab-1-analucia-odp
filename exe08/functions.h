@@ -1,2 +1,3 @@
-
-int somar(int n1, int n2);
+#include <stdbool.h>
+bool is_palindromo(char texto[]);
+bool is_palindromo_rec (char texto[], int posi, int posf);
