@@ -10,11 +10,11 @@ bool is_palindromo(char texto[])
 
 bool is_palindromo_rec (char texto[], int posi, int posf)
 {
+  if (posi>=posf)
+   return true;
+
   if (texto[posi] != texto[posf])
   return false;
 
-  if (posi>=posf)
-   return true;
-  else 
     return is_palindromo_rec(texto, posi+1, posf-1);
 }

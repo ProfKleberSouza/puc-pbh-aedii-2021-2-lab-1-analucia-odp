@@ -1,7 +1,17 @@
-
+#include <stdio.h>
 #include "functions.h"
 
-int somar(int n1, int n2){
+void tabela_verdade(int d)
+{
 
-    return n1+n2;
+  int tabela[100];
+  tabela_verdade_rec(tabela, d, 0, 0);
+}
+
+void tabela_verdade_rec(int tabela[], int d, int pos, int cont)
+{
+  for (cont=0; cont<pow(2,d); cont++)
+  {
+    tabela[pos]=
+  }
 }
