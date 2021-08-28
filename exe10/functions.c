@@ -4,29 +4,28 @@
 
 void tabela_verdade(int d)
 {
-  int tabela[100];
+  char tabela[100];
 
-  tabela_verdade_rec(tabela, d, 0, 0);
+  tabela_verdade_rec(tabela, d, 0);
 }
 
-void tabela_verdade_rec(int tabela[], int d, int cont, int pos)
+void tabela_verdade_rec(char tabela[], int d, int pos)
 {
-  if (cont>pow(2,d))
+  if (d==0)
   {
     tabela[pos] = '\0';
 
-    printf ("%d\n", tabela);
+    printf ("%s\n", tabela);
   }
 
-  else
-  {
-    if (d>0)
-    {
-     tabela[pos] = 1;
-     tabela_verdade_rec(placar,d-1,cont+1,pos+1);
-    }
+  else{
 
-    
+    tabela[pos] = '0';
+    tabela_verdade_rec(tabela,d-1,pos+1);
+
+    tabela[pos] = '1';
+    tabela_verdade_rec(tabela,d-1,pos+1);
+
   }
 
 }
