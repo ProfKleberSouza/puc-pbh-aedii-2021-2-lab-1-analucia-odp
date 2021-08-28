@@ -3,7 +3,7 @@
 
 int main() {
 
-  int v[100], n, m;
+  int v[100], n, m, maior, menor;
   
   // ENTRADA DE DADOS
   scanf("%d", &n);
@@ -12,7 +12,11 @@ int main() {
     scanf("%d", &v[pos]);
 
   // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  menor_maior(v, n, &v[0], &v[0]);
+  menor_maior(v, n, &menor, &maior);
+
+     //SAIDA - IMPRIMINDO O RESULTADO
+  printf("MENOR = %d\n", menor);
+  printf("MAIOR = %d\n", maior);
 
   // SAIDA - IMPRIMINDO O RESULTADO
   //printf("SOMA = %d\n", s);
